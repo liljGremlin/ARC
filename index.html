@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>ARC</title>
+        <link rel="stylesheet"type="text/css" href="style.css">
+       </head>
+
+    <body>
+        <!--Navigation bar-->
+        <nav class="navbar">
+            <div class="content">
+              <ul class="menu-list">
+                <li><a class="underline" href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#competition">Competition</a></li>
+                <li><a href="#recruitment">Recruitment</a></li>
+              </ul>
+            </div>
+          </nav>
+
+          <!--Main page-->
+          <main>
+            <!--Home-->
+
+            <div class="home">
+                <h1 class="cornelltitle">Cornell</h1>
+                <div class="whiteRec1"></div>
+                <h1 class="ARCtitle">Aerial Robotics Club</h1>
+            
+                <div class="redRec1"></div>
+                <img class="droneCanvas" src="img/drone.gif">
+                <h2 class="expoFutureText">Exploring The Future With Robotics</h2>    
+            </div>
+
+            <!--About-->
+            <div class="about" id ="about">
+                <h1 class="aboutHead">About</h1>
+                <a class="aboutBody">Founded in 2017, we are a team focused on building both controlled 
+                    and autonomous drones to compete in the International Aerial Robotics 
+                    Competition. The primary purpose of the IARC is to move the 
+                    state-of-the-art in aerial robotics forward through the creation of 
+                    significant and useful mission challenges that are considered 
+                    'impossible' at the time that they are proposed. Through competing 
+                    in these competitions students gain real life experience for future 
+                    success in industry.
+                </a>
+                <div class="redRec2"></div>
+                <div class="imgOneContainer"> <img class="imgOne" src="img/1.jpg"></div>
+                <div class="imgTwoContainer"><img class="imgTwo" src="img/4.jpg"></div>
+            </div>
+            
+            <!--Team-->
+            <div class="team" id="team">
+              
+              <a class="teamHead" id="teamHead">Teams</a>
+
+              <div class="boxContainer">
+                <button onclick="showMechanical()" class="teamBox m"><img class="icon" src="icons/mechanic.png"></button>
+                <button onclick="showElectrical()" class="teamBox e"><img class="icon" src="icons/electrical-energy.png"></button>
+                <button onclick="showComputer()" class="teamBox c"><img class="icon" src="icons/computer.png"></button>
+                <button onclick="showBusiness()" class="teamBox b"><img class="icon" src="icons/business.png"></button>
+                
+              </div>
+
+              <div class="teamImgContainer"><img class="teamImg" id="teamImg"></div>
+              <h2 class="teamName" id="teamName"></h2>
+              <div class="teamText" id="teamText"><a id="teamTextA"></a></div>
+
+            
+            </div>
+
+
+            <!--Competition-->
+            <div class="competition"id="competition">
+              <h2 class="compHead">Competition</h2>
+              
+              <div class="compContainer" >
+              </div>
+
+              <div class="compVideo">
+                <iframe class="ivideo" src="https://www.youtube-nocookie.com/embed/nswpNId-fWA?controls=0&amp;start=30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+              </div>
+
+              <div class=""></div>
+
+            </div>
+             
+          </main>
+
+          <script>
+
+            var check = false;
+
+
+            function checkBox() {
+              if (check == false)
+              {
+                var node = document.getElementById("teamText");
+                node.style.visibility = 'visible'; 
+                check = true;
+              }
+            }
+
+            function showBusiness() 
+            {
+                checkBox();
+
+                document.getElementById("teamName").textContent = "Business Team";
+                document.getElementById("teamImg").src = "img/5.png";
+                document.getElementById("teamText").style.backgroundColor = "coral";
+                document.getElementById("teamTextA").innerText = "The business team is in charge of any business development, marketing, or outreach for the team. The team is also responsible for all the finances, website development, video editing, and potential business transactions.";
+            }
+
+            function showComputer() 
+            {
+                 checkBox();
+                document.getElementById("teamName").textContent = "Computer Science Team";
+                document.getElementById("teamImg").src = "img/8.png";
+                document.getElementById("teamText").style.backgroundColor = "deepskyblue";
+                document.getElementById("teamTextA").innerText = "The computer science subteam makes the brains of the drone. They construct and implement the algorithms for object avoidance, path planning, communications, mission protocols and give the drone the awareness it needs to take on the challenges.";
+            }
+
+            function showElectrical() 
+            {
+               checkBox();
+                document.getElementById("teamName").textContent = "Electrical Team";
+                document.getElementById("teamImg").src = "img/7.jpg";
+                document.getElementById("teamText").style.backgroundColor = "darkkhaki";
+                document.getElementById("teamTextA").innerText = "The electrical team is in charge of anything that requires any electronics or low level coding. They deal with power distribution, serial communication, sensors, wiring soldering, computer architecture and radio signals";
+            }
+
+            function showMechanical() 
+            {
+                checkBox();
+                document.getElementById("teamName").textContent = "Mechancial Team";
+                document.getElementById("teamImg").src = "img/5.png";
+                document.getElementById("teamText").style.backgroundColor = "#5bab00";
+                document.getElementById("teamTextA").innerText = "The mechanical team is responsible for the overall physical of the drone. This includes designing and building the frame and aerodynamics of the drone. They also work closely together with the electrical team when mounting of the sensor to the drone.";
+            }
+
+            showMechanical();
+
+          </script>
+    </body>
+</html>
