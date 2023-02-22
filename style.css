@@ -12,6 +12,30 @@ html {
   background-color: rgb(49, 49, 49);
 }
 
+a:link {
+  color: red;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 .home {
   background-color: rgb(247, 247, 247);
 
@@ -28,6 +52,7 @@ html {
   -o-animation: fadeIn 3s;
   -ms-animation: fadeIn 3s;
 }
+
 
 .homeContainer {
 
@@ -342,15 +367,138 @@ html {
   justify-content: center;
 }
 
-.recruitment {
+
+.lastSectionContainer {
   background-color: white;
-  height: 100vh;
-  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recruitments {
+  background-color: white;
+  margin: auto auto;
+
+  height: 60vh; 
+  width: 40vw; 
+
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  display: grid;
+}
+
+.recruitment {
+  text-align: left;
+  align-self: last baseline;
+
+  grid-column: 2 / span 3;
+  grid-row: 1;
+}
+
+.recruitmentText {
+  text-align: left;
+  align-self: baseline;
+  padding-top: 20px;
+
+  grid-column: 2 / span 4;
+  grid-row: 2 / span 5;
+}
+
+.rec6 {
+  height: 90%;
+  width: 3px;
+  margin: auto auto;
+  background-color: dimgray;
+  border-radius: 10px 10px 10px 10px;
+  grid-column: 1;
+  grid-row: 1 / span 6;
 }
 
 
 
 
+.contactContainer
+{
+  background-color: white;
+  height: 60vh;
+  width: 40vw;
+  margin: auto auto;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  display: grid;
+}
+
+.contact {
+  text-align: left;
+  align-self: last baseline;
+
+  grid-column: 1 / span 4;
+  grid-row: 1;
+}
+
+.contactInfo {
+  text-align: left;
+  align-self: center;
+
+  grid-column: 1 / span 4;
+  grid-row: 2 / span 2;
+}
+
+.socials {
+  text-align: left;
+  align-self: center;
+
+  grid-column: 1 / span 4;
+  grid-row: 4;
+}
+
+.icons {
+  grid-column: 1 / span 5;
+  grid-row: 5;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+
+.icon {
+
+  width: 50px;
+  height: 50px;
+}
+
+.rec7 {
+  height: 90%;
+  width: 3px;
+  margin: auto auto;
+  background-color: dimgray;
+  border-radius: 10px 10px 10px 10px;
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+.rec8 {
+  height: 90%;
+  width: 3px;
+  margin: auto auto;
+  background-color: dimgray;
+  border-radius: 10px 10px 10px 10px;
+  grid-column: 1;
+  grid-row: 4 / span 2;
+}
+
+
+
+
+
+
+.stud {
+  
+  height: 100px; 
+  width: 100vw;
+
+}
 
 
 
@@ -547,6 +695,10 @@ color: rgb(255, 28, 28);
     visibility: visible;
   }
 
+  .competitionContainer
+  {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 500) {
