@@ -10,6 +10,7 @@
 html {
   scroll-behavior: smooth;
   background-color: rgb(49, 49, 49);
+  text-shadow: 0 0 2px rgba(76, 76, 76, 0.354);
 }
 
 a:link {
@@ -19,7 +20,7 @@ a:link {
 }
 
 a:visited {
-  color: pink;
+  color: green;
   background-color: transparent;
   text-decoration: none;
 }
@@ -37,7 +38,7 @@ a:active {
 }
 
 .home {
-  background-color: rgb(247, 247, 247);
+  background-color: rgb(248, 248, 248);
 
   display: flex;
   align-items: center;
@@ -107,6 +108,8 @@ a:active {
   height: 80%;
   margin-left: 20px;
 
+  box-shadow: 0 0 3px rgba(44, 44, 44, 0.434);
+
   border-radius: 10px 10px 10px 10px;
 
   grid-column: 4 / span 3;
@@ -121,6 +124,7 @@ a:active {
 
   background-color: rgb(255, 28, 28);
   border-radius: 10px 10px 10px 10px;
+  box-shadow: 0px 0px 3px rgba(77, 77, 77, 0.68);
 
   grid-column: 4;
   grid-row: 1 / span 6;
@@ -133,6 +137,7 @@ a:active {
 
   background-color: dimgray;
   border-radius: 10px 0px 0px 10px;
+  box-shadow: 0px 0px 3px rgba(77, 77, 77, 0.68);
 
   grid-column: 1 / span 3;
   grid-row: 3;
@@ -140,6 +145,9 @@ a:active {
 
 .aboutContainer {
   background-color: #D9D9D9;
+  padding: 3vh 0;
+
+  scroll-margin-top: 5vh; 
 
   display: flex;
   align-items: center;
@@ -158,10 +166,11 @@ a:active {
 .aboutUs {
 
   grid-column: 2 / span 4;
-  grid-row: 1 / span 2;
+  grid-row: 1;
+
+  align-self: last baseline;
 
   text-align: left;
-  align-self: center;
 }
 
 .aboutText {
@@ -184,15 +193,22 @@ a:active {
   width: 3px;
   background-color: white;
   border-radius: 10px 10px 10px 10px;
+  box-shadow: 0px 0px 3px rgba(77, 77, 77, 0.68);
 
   margin: auto auto;
   grid-column: 1;
   grid-row: 1 / span 5;
 }
 
+.containTeams {
+  background-color: #1E1E1E;
+  padding: 3vh 0;
+}
+
 .teamsContainer {
   background-color: #1E1E1E;
-
+  
+  scroll-margin-top: 5vh; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -207,11 +223,8 @@ a:active {
   display: grid;
 }
 
-.bottom {
-
-}
-
 .teams {
+  padding-top:20px;
   color: white;
   text-align: left;
   align-self: center;
@@ -241,11 +254,50 @@ a:active {
   height: 90%;
   width: 3px;
   background-color: rgb(255, 28, 28);
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: 0px 0px 3px rgba(77, 77, 77, 0.68);
 
-  margin: auto auto;
+  margin: 0 auto;
+  align-self: last baseline;
   grid-column: 1;
   grid-row: 1 / span 4;
 }
+
+.rec9 {
+  height: 90%;
+  width: 3px;
+  background-color: rgb(255, 28, 28);
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0px 0px 3px rgba(77, 77, 77, 0.68);
+
+  margin: 0 auto;
+  align-self: baseline;
+  grid-column: 1;
+  grid-row: 1 / span 4;
+}
+
+.rec10 {
+  height: 100%;
+  width: 3px;
+  background-color: rgb(255, 28, 28);
+  box-shadow: 0px 0px 3px rgba(77, 77, 77, 0.68);
+
+  grid-column: 1;
+  grid-row: 1 / span 4;
+}
+
+.rec11 {
+  height: 90%;
+  width: 3px;
+  background-color: rgb(255, 28, 28);
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0px 0px 3px rgba(77, 77, 77, 0.68);
+
+  align-self: baseline;
+  grid-column: 1;
+  grid-row: 1 / span 4;
+}
+
 
 .left {
   visibility: hidden;
@@ -298,11 +350,10 @@ a:active {
   grid-column: 1 / span 4;
 }
 
-
-
-
 .competitionContainer{
   background-color: #D9D9D9;
+  padding: 3vh 0;
+  scroll-margin-top: 5vh; 
 
   display: flex;
   align-items: center;
@@ -324,6 +375,8 @@ a:active {
   margin: auto auto;
   background-color: white;
   border-radius: 10px 10px 10px 10px;
+  box-shadow: 0px 0px 3px rgba(77, 77, 77, 0.68);
+
   grid-column: 1;
   grid-row: 1 / span 6;
 }
@@ -370,12 +423,14 @@ a:active {
 
 .lastSectionContainer {
   background-color: white;
+  padding: 3vh 0;
+
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.recruitments {
+.recruitmentContainer {
   background-color: white;
   margin: auto auto;
 
@@ -410,12 +465,22 @@ a:active {
   margin: auto auto;
   background-color: dimgray;
   border-radius: 10px 10px 10px 10px;
+  box-shadow: 0px 0px 3px rgba(77, 77, 77, 0.68);
+
   grid-column: 1;
   grid-row: 1 / span 6;
 }
 
+.rec12 {
+  height: 90%;
+  width: 3px;
+  background-color: dimgray;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0px 0px 3px rgba(77, 77, 77, 0.68);
 
-
+  grid-column: 1;
+  grid-row: 1 / span 6;
+}
 
 .contactContainer
 {
@@ -468,12 +533,19 @@ a:active {
   height: 50px;
 }
 
+.icon:hover {
+  box-shadow: 0 0 5px black;
+  border-radius: 28px 28px 28px 28px;
+}
+
 .rec7 {
   height: 90%;
   width: 3px;
   margin: auto auto;
   background-color: dimgray;
   border-radius: 10px 10px 10px 10px;
+  box-shadow: 0px 0px 3px rgba(77, 77, 77, 0.68);
+
   grid-column: 1;
   grid-row: 1 / span 2;
 }
@@ -484,13 +556,11 @@ a:active {
   margin: auto auto;
   background-color: dimgray;
   border-radius: 10px 10px 10px 10px;
+  box-shadow: 0px 0px 3px rgba(77, 77, 77, 0.68);
+
   grid-column: 1;
   grid-row: 4 / span 2;
 }
-
-
-
-
 
 
 .stud {
@@ -503,6 +573,7 @@ a:active {
 
 
 .navbar{
+  visibility: visible;
   position:fixed;  
   z-index:1;
   width:100%;
@@ -511,6 +582,7 @@ a:active {
   vertical-align:middle;
   line-height:50px;
   top:0px;
+  background-color: #1E1E1E;
   transition: all 0.3s ease;
 }
 
@@ -541,7 +613,7 @@ list-style: none;
 }
 
 .menu-list li a{
-color: dimgray;
+color: rgb(252, 250, 250);
 font-size: 20px;
 font-weight: 500;
 margin: auto 15px;
@@ -665,7 +737,10 @@ color: rgb(255, 28, 28);
   }
 
   .rec4{
-    margin: auto 0;
+    height: 94%;
+    margin: 0 0;
+    
+    
   }
 
   .teamRight {
@@ -695,10 +770,86 @@ color: rgb(255, 28, 28);
     visibility: visible;
   }
 
+  .rec9 {
+    height: 100%;
+    margin: 0 0;
+  }
+
   .competitionContainer
   {
     display: block;
   }
+
+  .competition {
+    width: 80vw;
+  }
+  
+  .thecomp {
+    grid-column: 1 / span 5;
+    margin-left: 15px;
+  }
+
+  .mission {
+    grid-column: 1 / span 5;
+    margin-left: 15px;
+  }
+  .compText {
+    grid-column: 1 / span 5;
+    margin-left: 15px;
+  }
+
+  .rec5 {
+    margin: auto 0;
+  }
+
+  .competitionVisual {
+    height: 40vh;
+    width: 80vw;
+  }
+
+  .lastSectionContainer {
+    display: block;
+  }
+
+  .recruitmentContainer {
+    height: 55vh;
+    width: 80vw;
+  }
+
+  .recruitment {
+    grid-column: 1 / span 5;
+    margin-left: 15px;
+  }
+
+  .recruitmentText
+  {
+    grid-column: 1 / span 5;
+    margin-left: 15px;
+  }
+
+  .rec6 {
+    margin: auto 0;
+  }
+
+  .contactContainer {
+    height: 55vh;
+    width: 80vw;
+  }
+
+  .contact {
+    margin-left: 15px;
+  }
+
+  .contactInfo {
+    grid-column: 1 / span 5;
+    margin-left: 15px;
+  }
+
+  .socials {
+    margin-left: 15px;
+  }
+
+
 }
 
 @media screen and (max-width: 500) {

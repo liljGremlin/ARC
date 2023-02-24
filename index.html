@@ -9,10 +9,10 @@
 
     <body>
         <!--Navigation bar-->
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
             <div class="content">
               <ul class="menu-list">
-                <li><a class="underline" href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#teams">Teams</a></li>
                 <li><a href="#competition">Competition</a></li>
@@ -22,7 +22,7 @@
           </nav>
 
           <!--Home-->
-          <div class="home">
+          <div class="home" id="home">
             <div class="homeContainer">
               <h1 class="cornell">Cornell</h1>
               <h1 class="arc">Aerial Robotics Club</h1>
@@ -48,41 +48,43 @@
           </div>
 
           <!--Teams-->
-          <div class="teamsContainer" id="teams">
-            <div class="team">
-              <div class="rec4"></div>
-              <h1 class="teams">Teams</h1>
-              <h2 class="teamName">Mechanical Team</h2>
-              <p class="teamText">The mechanical team is responsible for the overall physical of the drone. This includes 
-                designing and building the frame and aerodynamics of the drone. They also work closely together with the 
-                electrical team when mounting of the sensor to the drone.</p>
+          <div class="containTeams">
+            <div class="teamsContainer" id="teams">
+              <div class="team">
+                <div class="rec4"></div>
+                <h1 class="teams">Teams</h1>
+                <h2 class="teamName">Mechanical Team</h2>
+                <p class="teamText">The mechanical team is responsible for the overall physical of the drone. This includes 
+                  designing and building the frame and aerodynamics of the drone. They also work closely together with the 
+                  electrical team when mounting of the sensor to the drone.</p>
+              </div>
+              <div class="teamRight">
+                <div class="rec10 left"></div>
+                <h2 class="teamNameBottom etn">Eelectrical Team</h2>
+                <p class="teamTextBottom et">The electrical team is in charge of anything that requires any electronics or low level 
+                  coding. They deal with power distribution, serial communication, sensors, wiring soldering, computer architecture 
+                  and radio signals
+                </p>
+              </div>
             </div>
-            <div class="teamRight">
-              <div class="rec4 left"></div>
-              <h2 class="teamNameBottom etn">Eelectrical Team</h2>
-              <p class="teamTextBottom et">The electrical team is in charge of anything that requires any electronics or low level 
-                coding. They deal with power distribution, serial communication, sensors, wiring soldering, computer architecture 
-                and radio signals
-              </p>
-            </div>
-          </div>
-
-          <div class="teamsContainer">
-            <div class="teamBottom">
-              <div class="rec4"></div>
-              <h2 class="teamNameBottom">Computer Science Team</h2>
-              <p class="teamTextBottom">The computer science subteam makes the brains of the drone. They construct and implement 
-                the algorithms for object avoidance, path planning, communications, mission protocols and give the drone the 
-                awareness it needs to take on the challenges.
-              </p>
-            </div>
-            <div class="teamBottom">
-              <div class="rec4 left"></div>
-              <h2 class="teamNameBottom etn">Buisness Team</h2>
-              <p class="teamTextBottom et">The business team is in charge of any business development, marketing, or outreach for the 
-                team. The team is also responsible for all the finances, website development, video editing, and potential 
-                business transactions.
-              </p>
+  
+            <div class="teamsContainer">
+              <div class="teamBottom">
+                <div class="rec9"></div>
+                <h2 class="teamNameBottom">Computer Science Team</h2>
+                <p class="teamTextBottom">The computer science subteam makes the brains of the drone. They construct and implement 
+                  the algorithms for object avoidance, path planning, communications, mission protocols and give the drone the 
+                  awareness it needs to take on the challenges.
+                </p>
+              </div>
+              <div class="teamBottom">
+                <div class="rec11 left"></div>
+                <h2 class="teamNameBottom etn">Buisness Team</h2>
+                <p class="teamTextBottom et">The business team is in charge of any business development, marketing, or outreach for the 
+                  team. The team is also responsible for all the finances, website development, video editing, and potential 
+                  business transactions.
+                </p>
+              </div>
             </div>
           </div>
 
@@ -95,17 +97,17 @@
               <p class="compText">The current Mission 9 challenges teams to demonstrate new behaviors that have never before been attempted 
                 in any of the past IARC missions. Teams must create drones which can navigate fully autonomously, identify a target on a 
                 moving platform, manipulate objects mid flight, read text in russian, and speed through a 4 mile distance all in 9 minutes.
-                 Check out the video on the right for real life demonstration from the past 2017 competition. <br><br>For more information, check out their website: http://www.aerialroboticscompetition.org/</p>
+                 Check out the video on the right for real life demonstration from the past 2017 competition. <br><br>For more information, check out their website: <a href="http://www.aerialroboticscompetition.org/">here</a></p>
             </div>
 
             <div class="competitionVisual">
-              <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/JknrXs-s7y8?controls=0&amp;start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe width="560" height="270" src="https://www.youtube-nocookie.com/embed/JknrXs-s7y8?controls=0&amp;start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
           </div>
       
           <div class="lastSectionContainer">
             <!--Recruitment-->
-            <div class="recruitments" id="recruitment">
+            <div class="recruitmentContainer" id="recruitment">
               <div class="rec6"></div>
               <h1 class="recruitment">Recruitments</h1>
               <p class="recruitmentText">Please try to attend one of our info sessions. The zoom links are bellow. If you can't make any of them just email us at cornellaerialrobotics@gmail.com.
@@ -115,26 +117,24 @@
                 <br><br>Application due October 2nd. Here is the <a href="https://docs.google.com/forms/d/e/1FAIpQLSeRX_vUygDGmjj-mFEthS6OLQAyoxKY5yy9spMMidrr7Aw4Qg/viewform?usp=sf_link">link.</a>
               </p>
             </div>
-
-
+            
             <!--Contact-->
             <div class="contactContainer">
+              <div class="rec12 left"></div>
               <h1 class="contact">Contact Us</h1>
               <p class="contactInfo">Cell: +1 340-626-7923 <br><br>Email: cornellaerialrobotics@gmail.com<br><br>Address: aslkfdsjflkjl 8372 cbt45</p>
               <h1 class="socials">Socials</h1>
               <div class="icons">
-                <a href=""><img class="icon" src="img/facebook.png"></a>
-                <a href=""><img class="icon" src="img/twitter.png"></a>
-                <a href=""><img class="icon" src="img/youtube.png"></a>
-                <a href=""><img class="icon" src="img/instagram.png"></a>
+                <a href="https://www.instagram.com/aerialroboticscu/"><img class="icon" src="img/twitter.png"></a>
+                <a href="https://www.youtube.com/@cornellaerialroboticsclub8955"><img class="icon" src="img/youtube.png"></a>
+                <a href="https://www.instagram.com/aerialroboticscu/"><img class="icon" src="img/instagram.png"></a>
               </div>
             </div>  
-            
-          </div>
       
-
-          <div class="stud"></div>
-          <script>
-          </script>
+          </div>
+          
+          <div class="stud">
+          </div>
+          <script src="script.js"></script>
     </body>
 </html>
