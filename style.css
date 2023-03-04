@@ -570,8 +570,6 @@ a:active {
 
 }
 
-
-
 .navbar{
   visibility: visible;
   position:fixed;  
@@ -638,7 +636,7 @@ color: rgb(255, 28, 28);
 
   .about
   {
-    height: 40vh;
+    height: 60vh;
     width: 100vw;
   }
   .exp {
@@ -674,8 +672,9 @@ color: rgb(255, 28, 28);
   }
 
   .about {
-    height: 65vh;
+    height: auto;
     width: 80vw;
+    padding-bottom: 30px;
   }
 
   .aboutUs {
@@ -684,8 +683,6 @@ color: rgb(255, 28, 28);
     text-align: left;
     align-self: center;
     margin-left: 15px;
-    margin-top: 5vh;
-
   }
 
   .aboutText 
@@ -695,6 +692,7 @@ color: rgb(255, 28, 28);
     margin-left: 15px;
     grid-column: 1 / span 5;
     align-self: baseline;
+    margin-bottom: 15px;
   }
 
   .teamPhoto {
@@ -711,7 +709,7 @@ color: rgb(255, 28, 28);
     width: 3px;
     margin: auto 0;
 
-    height: 80%;
+    height: 100%;
   }
 
   .menu-list li a {
@@ -818,7 +816,7 @@ color: rgb(255, 28, 28);
   }
 
   .recruitmentContainer {
-    height: 55vh;
+    height: auto;
     width: 80vw;
   }
 
@@ -831,14 +829,16 @@ color: rgb(255, 28, 28);
   {
     grid-column: 1 / span 5;
     margin-left: 15px;
+    margin-bottom: 15px;
   }
 
   .rec6 {
     margin: auto 0;
+    height: 100%;
   }
 
   .contactContainer {
-    height: 55vh;
+    height: auto;
     width: 80vw;
   }
 
@@ -855,6 +855,8 @@ color: rgb(255, 28, 28);
     margin-left: 15px;
   }
 
+  
+
 
 }
 
@@ -863,9 +865,6 @@ color: rgb(255, 28, 28);
     visibility: hidden;
   }
   
-  .team {
-    
-  }
 }
 
 
